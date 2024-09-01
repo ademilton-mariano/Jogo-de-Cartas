@@ -109,6 +109,12 @@ function resetDeck() {
     resetFlippedCards();
 }
 
+document.addEventListener('DOMContentLoaded', () => {
+    createDeck();
+    shuffleImages();
+});
+
+
 shuffleButton.addEventListener('click', shuffleImages);
 
 createDeck();
